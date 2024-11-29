@@ -21,7 +21,7 @@ const page = () => {
       data: products,
       isLoading,
       isError,
-  }= useGetProductsQuery(searchTerm);
+  }= useGetProductsQuery(SearchTerm);
 
 return (
   <div className="mx-auto pb-5 w-full">
