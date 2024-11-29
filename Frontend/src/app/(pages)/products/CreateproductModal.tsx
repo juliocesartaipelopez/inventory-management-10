@@ -13,10 +13,9 @@ type ProductFormData = {
   type createProductoModalProps = {
     isOpen: boolean;
     onClose: ()=> void;
-    onCreate: (FormData: ProductFormData)=>void;
   }
 
-export const CreateproductModal = ({isOpen, onClose, onCreate}: createProductoModalProps) => {
+export const CreateproductModal = ({isOpen, onClose}: createProductoModalProps) => {
     const [formData, setFormData] = useState({
         productId: v4(),
         name:"",
@@ -35,7 +34,6 @@ export const CreateproductModal = ({isOpen, onClose, onCreate}: createProductoMo
     };
     const hanldleSubmit = (e: FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
-        onCreate(formData);
         onClose();
     };
     if (!isOpen) return null;
