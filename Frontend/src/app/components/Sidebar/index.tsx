@@ -68,20 +68,20 @@ export const Siddebar = () => {
            </button>
        </div>
        <div className='flex-grow mt-8'>
-           <SidebarLink href='/dashboard'icon={Layout}label='Dashboard' isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
-           <SidebarLink href='/usuario'icon={User}label='Usuarios'isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
-           <SidebarLink href='/estudiante'icon={UserRoundPen}label='Estudiantes'isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
-           <SidebarLink href='/products'icon={UserRoundPen}label='Product'isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
-           <SidebarLink href='/apoderado'icon={Users}label='Apoderado'isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
-           <SidebarLink href='/tablet'icon={Smartphone}label='Tablets'isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
-           <SidebarLink href='/reportes'icon={NotebookTabs}label='Reporte'isCollapsed={isSidebarCollapsed}>
-           </SidebarLink>
+            <SidebarLink href='/dashboard'icon={Layout}label='Dashboard' isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
+            <SidebarLink href='/usuario'icon={User}label='Usuarios'isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
+            <SidebarLink href='/estudiante'icon={UserRoundPen}label='Estudiantes'isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
+            <SidebarLink href='/apoderado'icon={Users}label='Apoderado'isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
+            <SidebarLink href='/pedidos'icon={Package}label='Pedidos'isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
+            <SidebarLink href='/products'icon={Smartphone}label='Productos'isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
+            <SidebarLink href='/reportes'icon={NotebookTabs}label='Reporte'isCollapsed={isSidebarCollapsed}>
+            </SidebarLink>
            <SidebarLink href="/settings" icon={SlidersHorizontal} label="Configuración" isCollapsed={isSidebarCollapsed}>
            </SidebarLink>
            <SidebarLink href="/expenses" icon={CircleDollarSign} label="Ventas" isCollapsed={isSidebarCollapsed}>
