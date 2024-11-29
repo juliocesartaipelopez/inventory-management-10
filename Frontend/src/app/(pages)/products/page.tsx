@@ -17,11 +17,7 @@ type ProductFormData = {
 const page = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isModalOpen, setIsModelOpen]= useState(false);
-  const {
-      data: products,
-      isLoading,
-      isError,
-  }= useGetProductsQuery(SearchTerm);
+
 
 return (
   <div className="mx-auto pb-5 w-full">
