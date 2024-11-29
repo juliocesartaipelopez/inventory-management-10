@@ -64,9 +64,6 @@ return (
           )}
           
       </div>
-      <CreateproductModal
-      isOpen={isModalOpen}
-      onClose={()=>setIsModelOpen(false)}}/>
   </div>
 )
 }
