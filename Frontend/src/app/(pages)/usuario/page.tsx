@@ -8,7 +8,7 @@ const columns:GridColDef[]=[
   {field: "name", headerName: "Nombre", width:200},
   {field: "email", headerName: "Email", width:200},
 ]
-export const page = () => {
+const page = () => {
   const {data: users, isError, isLoading} = useGetUsersQuery ();
 
   if (isLoading){
