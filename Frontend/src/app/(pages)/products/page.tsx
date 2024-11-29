@@ -31,15 +31,6 @@ return (
               onChange={(e)=>setSearchTerm(e.target.value)}/>
           </div>
       </div>
-      <div className="flex justify-between items-center mb-6">
-          <Header name="Productos"/>
-          <button className="flex items-center bg-blue-500 hover:bg-blue-700 text-gray-200
-          font-bold px-4 rounded"
-          onClick={()=>setIsModelOpen(true)}>
-              <PlusCircleIcon className="w-5 h-5 mr-2 !text-gray-200"/>
-              Crear Productos
-          </button>
-      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-between">
           {isLoading?(
               <div>
