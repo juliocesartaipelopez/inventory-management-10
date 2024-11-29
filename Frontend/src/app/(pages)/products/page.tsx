@@ -23,21 +23,6 @@ const page = () => {
       isError,
   }= useGetProductsQuery(searchTerm);
 
-  const [createProduct]= useCreateProductMutation();
-  const handlerCreateProduct = async(productData:ProductFormData)=>{
-      await createProduct(productData);
-  };
-  if(isLoading){
-      return <div className="py-4"> Cargando...</div>;
-  }
-  if(isError||!products){
-      return(
-          <div className="text-center text-red-500 py-4">
-              Conexion fallida
-          </div>
-      )
-  }
-
 return (
   <div className="mx-auto pb-5 w-full">
       <div className="mb-6">
@@ -94,8 +79,7 @@ return (
       </div>
       <CreateproductModal
       isOpen={isModalOpen}
-      onClose={()=>setIsModelOpen(false)}
-      onCreate={handlerCreateProduct}/>
+      onClose={()=>setIsModelOpen(false)}}/>
   </div>
 )
 }
