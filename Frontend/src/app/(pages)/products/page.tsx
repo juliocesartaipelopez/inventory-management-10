@@ -32,32 +32,32 @@ return (
           </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-between">
-              products?.map((product)=>(
-                  <div key={product.productId}
-                  className="border shadow rounded-md p-4 max-w-full w-full mx-auto">
-                      <div className="flex flex-col items-center">
-                          <img src="https://images.pexels.com/photos/7282899/pexels-photo-7282899.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                          className="mb-3 rounded-2xl w-36 h-36"
-                          alt="" />
-                          <h3 className="text-lg text-gray-900 font-semibold">
-                              {product.name}
-                          </h3>
-                          <p className="text-gray-800">
-                              S/.{product.price.toFixed(2)}
-                          </p>
-                          <div className="text-sm text-gray-600 mt-1">
-                              Stock: {product.stockQuantity}
-                          </div>
-                          {product.rating && (
-                              <div className=" flex items-center mt-2">
-                                  <Rating rating={product.rating}/>
-                              </div>
-                          )}
-                      </div>
-                  </div>
-              ))
-          )
-          
+        {products?.map((product) => (
+          <div
+            key={product.productId}
+            className="border shadow rounded-md p-4 max-w-full w-full mx-auto"
+          >
+            <div className="flex flex-col items-center">
+              <img
+                src="https://images.pexels.com/photos/7282899/pexels-photo-7282899.jpeg?auto=compress&cs=tinysrgb&w=400"
+                className="mb-3 rounded-2xl w-36 h-36"
+                alt=""
+              />
+              <h3 className="text-lg text-gray-900 font-semibold">
+                {product.name}
+              </h3>
+              <p className="text-gray-800">S/.{product.price.toFixed(2)}</p>
+              <div className="text-sm text-gray-600 mt-1">
+                Stock: {product.stockQuantity}
+              </div>
+              {product.rating && (
+                <div className="flex items-center mt-2">
+                  <Rating rating={product.rating} />
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
   </div>
 )
