@@ -32,11 +32,6 @@ return (
           </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-between">
-          {isLoading?(
-              <div>
-                  Cargando...
-              </div>
-          ):(
               products?.map((product)=>(
                   <div key={product.productId}
                   className="border shadow rounded-md p-4 max-w-full w-full mx-auto">
@@ -61,7 +56,7 @@ return (
                       </div>
                   </div>
               ))
-          )}
+          )
           
       </div>
   </div>
