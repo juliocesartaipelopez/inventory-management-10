@@ -1,4 +1,4 @@
-import { Archive, CircleDollarSign, Layout, LucideIcon, Menu,SlidersHorizontal, User, Clipboard, UserRoundPen, Users, Smartphone, NotebookTabs } from 'lucide-react'
+import { Archive, CircleDollarSign, Layout, LucideIcon, Menu,SlidersHorizontal, User, Clipboard, UserRoundPen, Users, Smartphone, NotebookTabs, Package } from 'lucide-react'
 import { usePathname } from 'next/navigation';
 import React from 'react'
 import Link from 'next/link';
