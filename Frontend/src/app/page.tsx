@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Ecommers from "./(pages)/e-commers/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <Ecommers />
+  redirect('/e-commers')
 }
